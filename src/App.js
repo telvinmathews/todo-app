@@ -6,20 +6,33 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-        </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-        </a>
-        </header>
+        My hello world
+        <FirstComponet></FirstComponet>
+        <SecondComponet></SecondComponet>
+      </div>
+    );
+  }
+}
+
+//Class component
+//create a component (line 19)
+//disply componet by including component in the root App componet on line 10. 
+class FirstComponet extends Component {
+  render() {
+    return (
+      <div className="firstComponet">
+       FirstComponet
+      </div>
+    );
+  }
+}
+
+//Class component
+class SecondComponet extends Component {
+  render() {
+    return (
+      <div className="secondComponet">
+       SecondComponet
       </div>
     );
   }
