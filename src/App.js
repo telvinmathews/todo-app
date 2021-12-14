@@ -7,8 +7,9 @@ class App extends Component {
     return (
       <div className="App">
         My hello world
-        <FirstComponet></FirstComponet>
-        <SecondComponet></SecondComponet>
+        <FirstComponent></FirstComponent>
+        <SecondComponent></SecondComponent>
+        <ThirdComponent></ThirdComponent>
       </div>
     );
   }
@@ -17,24 +18,32 @@ class App extends Component {
 //Class component
 //create a component (line 19)
 //disply componet by including component in the root App componet on line 10. 
-class FirstComponet extends Component {
+class FirstComponent extends Component {
   render() {
     return (
-      <div className="firstComponet">
-       FirstComponet
+      <div className="firstComponent">
+       First Component
       </div>
     );
   }
 }
 
 //Class component
-class SecondComponet extends Component {
+class SecondComponent extends Component {
   render() {
     return (
-      <div className="secondComponet">
-       SecondComponet
+      <div className="secondComponent">
+       Second Component
       </div>
     );
   }
+}
+//fuction component
+function ThirdComponent() {
+  return (
+ <div className="thirdComponent">
+  Third Component
+ </div>
+);
 }
 export default App;
