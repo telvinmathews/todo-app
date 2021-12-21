@@ -13,6 +13,8 @@ class Counter extends Component {
         }
 
         this.increment = this.increment.bind(this);
+        this.plusTen = this.plusTen.bind(this);
+        this.minusTen = this.minusTen.bind(this);
         this.double = this.double.bind(this);
         this.minusTwo = this.minusTwo.bind(this);
         this.decrement = this.decrement.bind(this);
@@ -24,6 +26,8 @@ class Counter extends Component {
         return (
             <div className="counter">
                 <button onClick={this.increment}>+1</button>
+                <button onClick={this.plusTen}>+10</button>
+                <button onClick={this.minusTen}>-10</button>
                 <button onClick={this.double}>+2</button>
                 <button onClick={this.decrement}>-1</button>
                 <button onClick={this.minusTwo}>-2</button>
@@ -49,6 +53,16 @@ class Counter extends Component {
     minusTwo() {
         this.setState({
             counter: this.state.counter - 2
+        });
+    }
+    plusTen() {
+        this.setState({
+            counter: this.state.counter + 10
+        });
+    }
+    minusTen() {
+        this.setState({
+            counter: this.state.counter - 10
         });
     }
 }
